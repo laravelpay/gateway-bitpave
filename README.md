@@ -16,5 +16,5 @@ php artisan gateway:install laravelpay/gateway-bitpave
 3. Copy your Client ID and Secret
 
 ```
-php artisan gateway:install bitpave
+php artisan gateway:setup bitpave
 ```
