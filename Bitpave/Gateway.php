@@ -74,7 +74,7 @@ class Gateway extends GatewayFoundation
         return redirect()->away($checkout['checkout_url']);
     }
 
-    public function callback(Request $request)
+    public function webhook(Request $request)
     {
         // check if signature is set and matches the client secret
         if($request->get('signature') !== $this->config('client_secret')) {
